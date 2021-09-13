@@ -13,24 +13,24 @@ const morningGreetings = (name) => {
     console.log(`Good morning ${name}`); 
   }
   const toDo = function (taskName) {
-    console.log(`Today you should ${name}`);
+    console.log(`Today you should ${taskName}`);
   }
    
-  const todaysGreeting = () {
+  const todaysGreeting = () => {
     morningGreetings('Lisa')
     console.log(`Thanks for all you have done during yesterday`);
-    toDo('practice your JavaScript further.");
+    toDo('practice your JavaScript further.');
   }
    
   todaysGreeting();
    
-   function myCounter ()  {
-    let count = 0
+   function myCounter () {
+    let count = 0; 
     return function () {
-       ++count;
+       return ++count;
     }
   }
-  const noOfTimes = myCounters();
+  const noOfTimes = myCounter();
   noOfTimes();
   console.log(noOfTimes("is this string meant to be here?")); 
   
